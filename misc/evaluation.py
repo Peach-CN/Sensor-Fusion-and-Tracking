@@ -162,7 +162,7 @@ def plot_tracks(fig, ax, ax2, track_list, meas_list, lidar_labels, lidar_labels_
         if label not in label_list:
             handle_list.append(handle)
             label_list.append(label)
-    ax.legend(handle_list, label_list, loc='center left', shadow=True, fontsize='x-large', bbox_to_anchor=(0.8, 0.5))
+    ax.legend(handle_list, label_list, loc='center left', shadow=True, fontsize='small', bbox_to_anchor=(0.8, 0.5))
 
     plt.pause(0.01)
     
@@ -170,7 +170,7 @@ def plot_tracks(fig, ax, ax2, track_list, meas_list, lidar_labels, lidar_labels_
 
 
 def plot_rmse(manager, all_labels):
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(10, 5))
     plot_empty = True
     
     # loop over all tracks
@@ -221,9 +221,10 @@ def plot_rmse(manager, all_labels):
     if plot_empty: 
         print('No confirmed tracks found to plot RMSE!')
     else:
-        plt.legend(loc='center left', shadow=True, fontsize='x-large', bbox_to_anchor=(0.9, 0.5))
+        plt.legend(loc='best', shadow=True, fontsize='large')#bbox_to_anchor=(0.9, 0.5))
         plt.xlabel('time [s]')
         plt.ylabel('RMSE [m]')
+        plt.savefig('step4-RSME.png')
         plt.show()
         
         
