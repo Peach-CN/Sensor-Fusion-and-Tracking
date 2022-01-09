@@ -18,7 +18,9 @@
 
 ![step4-RSME](Final-Term-writeup.assets/step4-RSME.png)
 
-These codes are similar to the contents from Andreas in the class. But the logical relationship is some complex.  I know clearly that Multi-Target Tracking takes place in vehicle coordinate, but I confused about the coordinate transform in this project. At last, I found when computing the H Matrix of KF, the transformation is considered. But I have not figured out the process of the camera H in the codes. 
+These codes are similar to the contents from Andreas in the class. But the logical relationship is some complex.  I know clearly that Multi-Target Tracking takes place in vehicle coordinate, but I confused about the coordinate transform in this project. At last, I found when computing the H Matrix of KF, the transformation is considered. But I have not figured out the process of the camera H in the codes.
+
+**The output video: [my_tracking_results.avi](https://drive.google.com/file/d/1vJhUBxDnSwHNCGzigTp3dHV8YdnJuF3U/view?usp=sharing) **
 
 ### 2.  Benefits in Sensor Fusion
 
